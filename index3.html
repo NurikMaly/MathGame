@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <title>The3</title>
+    <link rel="stylesheet"href="style.css">
+    
+    <div class="container">
+        <div class="points"><a id="point">Points / Очки : 0</a> <span id="outer2">Время : 5 min </span><span id="outer3"></span>
+        </div>
+        <div id="number">
+            <p id="text">√13² - 12² + √122² - 22² = ?</p><br>
+            <a href="index3.html" id="again"></a>
+            <a href="start.html" id="start"></a>
+
+            
+        </div>
+
+        <div class="answers">
+            <button style="background-color: red;" id="one">125</button><br>
+            <button style="background-color: green;" id="two">115</button><br>
+            <button style="background-color: orange;" id="three">120</button>
+        </div>
+    </div>
+   <script>
+    var first_btn=document.getElementById("one");
+var second_btn=document.getElementById("two");
+var third_btn=document.getElementById("three");
+var text=document.getElementById("text");
+const points=document.getElementById("point");
+var point=0;
+let q=["√81 * √100 - √25-16 = ?","(√11 - √7)(√7 + √11)-(√12-√3)(√12-√3) = ?","√63 * √7 = ?","4√4 - 3√9 + 2√25 = ?","√2 * √32 + √10*√90 = ? "];
+let b1=["86","2","5","10","38","7"];
+let b2=["87","3","4","7","34","5"];
+let b3=["84","1","7","9","37","8"];
+var b=5;
+var c=0;
+    first_btn.onclick=function but1(){
+    if(text.innerHTML=="√13² - 12² + √122² - 22² = ?"){point+=1;first_btn.innerHTML=b1[0];second_btn.innerHTML=b2[0]; third_btn.innerHTML=b3[0];text.innerHTML=q[0];points.innerHTML="Points / Очки : " + point;}
+    else if(text.innerHTML==q[0]){first_btn.innerHTML=b1[1];second_btn.innerHTML=b2[1]; third_btn.innerHTML=b3[1];text.innerHTML=q[1];}
+    else if(text.innerHTML==q[1]){first_btn.innerHTML=b1[2];second_btn.innerHTML=b2[2]; third_btn.innerHTML=b3[2];text.innerHTML=q[2];}
+    else if(text.innerHTML==q[2]){point+=1;first_btn.innerHTML=b1[3];second_btn.innerHTML=b2[3]; third_btn.innerHTML=b3[3];text.innerHTML=q[3];points.innerHTML="Points / Очки : " + point;}
+    else if(text.innerHTML==q[3]){first_btn.innerHTML=b1[4];second_btn.innerHTML=b2[4]; third_btn.innerHTML=b3[4];text.innerHTML=q[4];}
+    else if(text.innerHTML==q[4]){point+=1;first_btn.innerHTML=b1[5];second_btn.innerHTML=b2[5]; third_btn.innerHTML=b3[5];text.innerHTML=q[5];points.innerHTML="Points / Очки : " + point;text.innerHTML='Количество очков : '+ point;text.innerHTML='Количество очков : '+ point}
+
+    if(text.innerHTML=='Количество очков : '+ point){first_btn.innerHTML='';second_btn.innerHTML='';third_btn.innerHTML='';document.getElementById("again").innerHTML="Сыграт снова ";document.getElementById("start").innerHTML=" Главный меню ";}
+}
+
+
+second_btn.onclick=function but2(){  
+    if(text.innerHTML=="√13² - 12² + √122² - 22² = ?"){ first_btn.innerHTML=b1[0];second_btn.innerHTML=b2[0];third_btn.innerHTML=b3[0];text.innerHTML=q[0];}
+   else if(text.innerHTML==q[0]){point+=1;first_btn.innerHTML=b1[1];second_btn.innerHTML=b2[1]; third_btn.innerHTML=b3[1];text.innerHTML=q[1];points.innerHTML="Points / Очки : " + point;}
+   else if(text.innerHTML==q[1]){first_btn.innerHTML=b1[2];second_btn.innerHTML=b2[2]; third_btn.innerHTML=b3[2];text.innerHTML=q[2];}
+   else if(text.innerHTML==q[2]){first_btn.innerHTML=b1[3];second_btn.innerHTML=b2[3]; third_btn.innerHTML=b3[3];text.innerHTML=q[3];}
+   else if(text.innerHTML==q[3]){first_btn.innerHTML=b1[4];second_btn.innerHTML=b2[4]; third_btn.innerHTML=b3[4];text.innerHTML=q[4];}
+   else if(text.innerHTML==q[4]){first_btn.innerHTML=b1[5];second_btn.innerHTML=b2[5]; third_btn.innerHTML=b3[5];text.innerHTML=q[5];}
+    
+   
+   if(text.innerHTML=='Количество очков : '+ point){first_btn.innerHTML='';second_btn.innerHTML='';third_btn.innerHTML='';document.getElementById("again").innerHTML="Сыграт снова ";document.getElementById("start").innerHTML=" Главный меню ";}
+}
+third_btn.onclick=function but3(){    
+    if(text.innerHTML=="√13² - 12² + √122² - 22² = ?"){ first_btn.innerHTML=b1[0]; second_btn.innerHTML=b2[0]; third_btn.innerHTML=b3[0];text.innerHTML=q[0];}
+    else if(text.innerHTML==q[0]){first_btn.innerHTML=b1[1];second_btn.innerHTML=b2[1]; third_btn.innerHTML=b3[1];text.innerHTML=q[1];}
+    else if(text.innerHTML==q[1]){point+=1;first_btn.innerHTML=b1[2];second_btn.innerHTML=b2[2]; third_btn.innerHTML=b3[2];text.innerHTML=q[2];points.innerHTML="Points / Очки : " + point;}
+    else if(text.innerHTML==q[2]){first_btn.innerHTML=b1[3];second_btn.innerHTML=b2[3]; third_btn.innerHTML=b3[3];text.innerHTML=q[3];}
+    else if(text.innerHTML==q[3]){point+=1;first_btn.innerHTML=b1[4];second_btn.innerHTML=b2[4]; third_btn.innerHTML=b3[4];text.innerHTML=q[4];points.innerHTML="Points / Очки : " + point;}
+    else if(text.innerHTML==q[4]){first_btn.innerHTML=b1[5];second_btn.innerHTML=b2[5]; third_btn.innerHTML=b3[5];text.innerHTML=q[5];text.innerHTML='Количество очков : '+ point}
+   
+    if(text.innerHTML=='Количество очков : '+ point){first_btn.innerHTML='';second_btn.innerHTML='';third_btn.innerHTML='';document.getElementById("again").innerHTML="Сыграт снова ";document.getElementById("start").innerHTML=" Главный меню ";}
+}
+
+
+function s(){
+  
+    if(c==0&&b==0){
+       return;
+
+   }
+    if(c==0){
+        b--;
+        c=60;
+
+    }
+    if(b<0){
+
+        b=60;
+
+    }
+    if(c!==0){
+        check=setTimeout(function() {
+
+        c--;
+           document.getElementById("outer2").innerHTML= c + " sec  ";
+    document.getElementById("outer3").innerHTML=b + " min : ";
+s();
+  }, 1000);
+};
+
+    document.getElementById("outer2").innerHTML= c + " sec  ";
+    document.getElementById("outer3").innerHTML=b + " min : ";
+
+}
+s();
+   </script>
+
+</html>

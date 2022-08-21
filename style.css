@@ -1,0 +1,222 @@
+body{
+    justify-content: center;
+    display: flex;
+}
+.container{
+    box-shadow: 0 0 8px black;
+    border-radius: 5%;
+    width: 70%;
+    height: 600px;
+    background-color: rgb(27, 49, 173);
+}
+*{
+    color: white;
+}
+
+.points{
+  
+    font-family: sans-serif;
+    font-size: 22px;
+    width: 70%;
+    position: relative;
+    float: left;
+margin: 15px;
+}
+.points span{
+    position: relative;
+    float: right;
+}
+#number{
+    position: relative;
+    float:left;
+    border-right: 1px solid rgb(209, 209, 209);
+bottom: 9%;
+    width: 77%;
+    height: 100%;
+    text-align: center;
+}
+#number p{
+    position: relative;
+    top:30%;
+    font-size: 60px;
+    font-family: sans-serif;
+
+}
+#number a{
+    font-size: 30px;
+    text-decoration: none;
+    color: gold;
+    position: relative;
+    top: 25%;
+    width: 60%;
+  font-family: cursive;
+
+}
+#number a:hover{
+    color: red;
+}
+#menu{
+    text-align: right;
+}
+#again{
+text-align: left;
+}
+#out{
+    position: relative;
+    top: 45%;
+ 
+}
+#out p{
+    font-size: 26px;
+   
+}
+.answers{
+    position: relative;
+    float: right;
+bottom: 9%;
+}
+.answers button{
+    margin: 1%;
+    margin-right: 5px;
+    width: 205px;
+    height: 195px;
+    font-size: 32px;
+    border: 0.5px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.answers button:hover{
+   box-shadow: 0 0 2px;
+    font-size: 38px;
+    border-radius: 35%;
+ 
+}
+@media screen and (max-width:1344px){
+    .answers button{
+        width: 185px;
+    height: 165px;
+    }
+}
+@media screen and (max-width:1222px){
+    .answers button{
+        width: 165px;
+    height: 145px;
+    }
+    #number{
+        width: 73%;
+    }
+    .points{
+        width: 67%;
+    }
+}
+@media screen and (max-width:940px){
+    .answers button{
+        width: 205px;
+    height: 185px;
+    }
+    #number{
+        width: 63%;
+    }
+    .points{
+        width: 57%;
+    }
+}
+@media screen and (max-width:850px){
+    .answers button{
+        width: 175px;
+    height: 155px;
+    }
+    .points{
+        font-size: 18px;
+    }
+ 
+}
+
+@media screen and (max-width:735px){
+    .answers button{
+        width: 155px;
+    height: 135px;
+    }
+    .points{
+        font-size: 18px;
+    }
+ #number p{
+    font-size: 50px;
+ }
+ .container{
+    height: 500px;
+ }
+}
+
+@media screen and (max-width:735px){
+    .answers button{
+        width: 125px;
+    height: 105px;
+    }
+    .points{
+        font-size: 16px;
+    }
+ #number p{
+    font-size: 40px;
+ }
+ .container{
+    height: 400px;
+ }
+}
+@media screen and (max-width:605px){
+    .answers button{
+        width: 135px;
+    height: 115px;
+    }
+    .points{
+        font-size: 18px;
+    }
+     #number{
+        width: 70%;
+     }
+ #number p{
+    font-size: 50px;
+ }
+ .container{
+    height: 500px;
+    width: 100%;
+ }
+}
+@media screen and (max-width:515px){
+    .answers button{
+        width: 115px;
+    height: 95px;
+    }
+    .points{
+        font-size: 16px;
+    }
+     #number{
+        width: 73%;
+     }
+ #number p{
+    font-size: 50px;
+ }
+ .container{
+    height: 500px;
+    width: 100%;
+ }
+}
+@media screen and (max-width:465px){
+    .answers button{
+        width:115px;
+    height: 95px;
+    }
+    .points{
+        font-size: 14px;
+    }
+     #number{
+        width: 65%;
+     }
+ #number p{
+    font-size: 40px;
+ }
+ .container{
+    height: 500px;
+    width: 100%;
+ }
+}
